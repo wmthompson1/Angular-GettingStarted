@@ -8,6 +8,8 @@ import { WelcomeComponent } from './home/welcome.component';
 import { ProductModule } from './products/product.module';
 import { MockDataComponent } from './mock-data/mock-data.component';
 import { TsfFooterComponent } from './tsf-footer/tsf-footer.component';
+//AddDeveloper
+import { AddDeveloper } from 'app/ch7/multi-page-template/add_developer';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,7 @@ import { TsfFooterComponent } from './tsf-footer/tsf-footer.component';
     RouterModule.forRoot([
         { path: 'welcome', component: WelcomeComponent },
         { path: 'mock-data', component: MockDataComponent },
+        { path  'add-developer', component: AddDeveloper }
         { path: '', redirectTo: 'welcome', pathMatch: 'full'},
         { path: '**', redirectTo: 'welcome', pathMatch: 'full'}
     ]),
